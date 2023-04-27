@@ -12,7 +12,7 @@ header {
   justify-content: space-between;
   color: #fff;
   padding: 25px;
-  width: 376px;
+  width: 375px;
   margin: auto;
 }
 
@@ -30,7 +30,8 @@ header {
   background-image: url(./Images/Group.png);
   background-position: 294px 380px;
   background-repeat: no-repeat;
-  width: 376px;
+  overflow-x: hidden;
+  width: 375px;
   margin: auto;
 }
 
