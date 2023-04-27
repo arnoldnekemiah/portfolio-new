@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@400;500;700&family=Poppins:wght@300;400;600;700;900&family=Roboto:wght@500;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* the header section */
+header {
+  background: #3c3a39;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  padding: 25px;
+  width: 375px;
+  margin: auto;
+}
+
+#logo {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* headline section */
+.headline {
+  background: #1c1a19;
+  color: #fff;
+  padding: 130px 25px 145px;
+  background-image: url(./Images/Group.png);
+  background-position: 294px 380px;
+  background-repeat: no-repeat;
+  width: 375px;
+  margin: auto;
+}
+
+h1 {
+  width: 327px;
+  height: 124px;
+  font-family: 'Crete Round', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+
+  /* or 114% */
+  letter-spacing: 0.37px;
+
+  /* Theme 3 / Primary 1 */
+  color: #ff6b00;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.title {
+  height: 100px;
+  font-size: 24px;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #fff;
+  margin: 10px 0 10px 0;
+  width: 327px;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  width: 180px;
+  font-size: 20px;
+  margin-top: 25px;
+}
+
+.fa-brands,
+.fa-solid {
+  color: #fff;
+}
