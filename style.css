@@ -95,7 +95,6 @@ ul {
   flex-direction: column;
   width: 375px;
   align-items: flex-start;
-  padding: 120px 24px;
   gap: 12px;
   margin: auto;
 }
@@ -211,6 +210,7 @@ ul {
   padding-left: 10px;
   width: 70%;
   margin-top: 0;
+  gap: 20px;
 }
 
 .profesional-Art-li {
@@ -222,6 +222,7 @@ ul {
   background: rgba(255, 255, 255, 0.24);
   margin-top: 50px;
   gap: 20px;
+  padding: 10px 12px;
 }
 
 a {
@@ -241,19 +242,13 @@ a {
   color: #fff;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-top: 70px;
+  margin-top: 38px;
   border-style: none;
 }
 
 a.profesional-Art-btm {
   display: flex;
   align-items: center;
-}
-
-.art-container #hide-me,
-.art-container1 #hide-me,
-.art-container2 #hide-me {
-  display: none;
 }
 
 .art-container:hover #hide-me,
@@ -332,6 +327,7 @@ h2 {
 .footer-heading {
   font-size: 22px;
   font-weight: 700;
+  color: #fff;
 }
 
 .footer-ul {
