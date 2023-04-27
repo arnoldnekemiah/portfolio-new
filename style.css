@@ -12,7 +12,7 @@ header {
   justify-content: space-between;
   color: #fff;
   padding: 25px;
-  width: 375px;
+  width: 376px;
   margin: auto;
 }
 
@@ -26,19 +26,18 @@ header {
 .headline {
   background: #1c1a19;
   color: #fff;
-  padding: 130px 24px 145px;
+  padding: 130px 25px 145px;
   background-image: url(./Images/Group.png);
-  background-position: bottom right;
+  background-position: 294px 380px;
   background-repeat: no-repeat;
-  width: 375px;
+  width: 376px;
   margin: auto;
 }
 
 h1 {
   width: 327px;
   height: 124px;
-
-  /* font-family: 'Crete Round'; */
+  font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 56px;
