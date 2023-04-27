@@ -30,7 +30,6 @@ header {
   background-image: url(./Images/Group.png);
   background-position: 294px 380px;
   background-repeat: no-repeat;
-  overflow-x: hidden;
   width: 375px;
   margin: auto;
 }
