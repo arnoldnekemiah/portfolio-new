@@ -308,6 +308,10 @@ h2 {
   height: 400px;
 }
 
+.image-bg:hover{
+  transform: scale(0.7);
+}
+
 .footer-img {
   padding-left: 212px;
   margin-top: 280px;
