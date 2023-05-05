@@ -259,12 +259,6 @@ a.profesional-Art-btm {
   align-items: center;
 }
 
-.art-container:hover #hide-me,
-.art-container1:hover #hide-me,
-.art-container2:hover #hide-me {
-  display: flex;
-  text-align: center;
-}
 
 /* footer section */
 .about {
@@ -546,10 +540,6 @@ h2 {
     gap: 30px;
   }
 
-  .close {
-    display: none;
-  }
-
   header {
     width: 100%;
     height: 8px;
@@ -711,6 +701,12 @@ h2 {
     background-image: url("./Images/Mask-Group.png");
   }
 
+  .art-container > .mycard:hover,
+  .art-container1 > .mycard:hover,
+  .art-container2 > .mycard:hover {
+    opacity: 0;
+  }
+
   .v2 {
     padding: 12px;
   }
@@ -736,9 +732,12 @@ h2 {
     display: flex;
     flex-direction: row;
     margin-right: 14%;
-    background-image: url("./Images/illustration-about\ me@3x.png");
-    background-size: 310px 268px;
-    background-position: 10% 95%;
+    background-image: url("./Images/illustration-about-me-d.png");
+    background-size: cover;
+    background-position: center bottom;
+    width: 600px;
+    height: 300px;
+    margin-top: 10%;
     transform: rotate(360deg);
   }
 
@@ -820,13 +819,14 @@ h2 {
   .skill {
     height: 336px;
     width: 282px;
-    left: 875.4560546875px;
+    left: 875px;
     top: 130px;
   }
 
   .contact {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 1fr);
+    grid-auto-flow: row;
     margin-left: 135px;
     margin-top: 130px;
     height: 400px;
