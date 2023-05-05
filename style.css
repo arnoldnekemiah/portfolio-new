@@ -718,9 +718,7 @@ h2 {
     background-image: url("./Images/Mask-Group.png");
   }
 
-  .art-container > .mycard:hover,
-  .art-container1 > .mycard:hover,
-  .art-container2 > .mycard:hover {
+  .project-card:hover .mycard {
     opacity: 0;
   }
 
