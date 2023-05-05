@@ -191,15 +191,15 @@ ul {
   margin-bottom: 20px;
 }
 
-.art-container #hide-me,
-.art-container1 #hide-me,
-.art-container2 #hide-me {
+.art-container .hide,
+.art-container1 .hide,
+.art-container2 .hide {
   display: none;
 }
 
-.art-container:hover #hide-me,
-.art-container1:hover #hide-me,
-.art-container2:hover #hide-me {
+.art-container:hover .hide,
+.art-container1:hover .hide,
+.art-container2:hover .hide {
   display: flex;
   text-align: center;
 }
