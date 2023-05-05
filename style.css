@@ -129,7 +129,7 @@ ul {
 .about-img {
   height: 237px;
   margin-top: 50px;
-  background-image: url("./Images/Img--Placeholder.png");
+  background-image: url('./Images/Img--Placeholder.png');
 }
 
 .Multi-Post-Heading {
@@ -187,7 +187,7 @@ ul {
 .art-container,
 .art-container1,
 .art-container2 {
-  background-image: url("./Images/Img-Placeholder10.png");
+  background-image: url('./Images/Img-Placeholder10.png');
   margin-bottom: 20px;
 }
 
@@ -316,10 +316,14 @@ h2 {
 .image-bg {
   position: absolute;
   right: -140px;
-  background-image: url("./Images/illustration-about-me-mobile.png");
+  background-image: url('./Images/illustration-about-me-mobile.png');
   background-repeat: no-repeat;
   width: 300px;
   height: 400px;
+}
+
+.image-bg:hover {
+  transform: scale(0.7);
 }
 
 .footer-img {
@@ -371,6 +375,7 @@ h2 {
   color: #f55800;
   border: 1px solid #f55800;
   font-weight: 700;
+  transition: all 0.4s ease-in-out;
 }
 
 .button:enabled {
