@@ -47,7 +47,7 @@ Welcome to my portfolio project
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](#)
+- [Live Demo Link](https://arnoldnekemiah.github.io/portfolio-new/)
 - [Online Link](#)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
