@@ -49,6 +49,7 @@ Welcome to my portfolio project
 
 - [Live Demo Link](https://arnoldnekemiah.github.io/portfolio-new/)
 - [Online Link](#)
+- [Video descrription](https://www.loom.com/share/c04c8ce8c5e749ff9cd8f679220f201d)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
