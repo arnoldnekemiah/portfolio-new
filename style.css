@@ -14,6 +14,7 @@ header {
   padding: 25px;
   width: 375px;
   margin: auto;
+  position: relative;
 }
 
 #logo {
@@ -30,6 +31,42 @@ header {
   display: none;
 }
 
+.close{
+  position: absolute;
+  top: 0;
+  right: 100px;
+  z-index: 999;
+  font-size: 30px;
+  color: #fff;
+}
+
+.menu-popup{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: #212121;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.9;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-popup .mobile_specific-links{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.menu-popup .mobile_specific-links .nav-link a{
+  display: flex;
+  
+  color: red;
+  
+}
 /* headline section */
 .headline {
   background: #1c1a19;
