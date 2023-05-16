@@ -1,23 +1,27 @@
-//mobile menu
-let mobile_menu = document.getElementById('menu-popup');
-let openMenuButton = document.getElementById("btn-menu");
-let closeMenuButton = document.querySelector('.close');
-let links = document.querySelectorAll('.nav-link a');
+// mobile menu
+const mobileMenu = document.getElementById('menu-popup');
+const openMenuButton = document.getElementById('btn-menu');
+const closeMenuButton = document.querySelector('.close');
+const links = document.querySelectorAll('.nav-link a');
+const body = document.body;
 
 function openMenu() {
-  mobile_menu.style.display = 'flex';
+  mobileMenu.style.display = 'flex';
+  body.classList.add('menu-open');
 }
 
 openMenuButton.addEventListener('click', openMenu);
 
 function closeMenu() {
-  mobile_menu.style.display = 'none';
+  mobileMenu.style.display = 'none';
+  body.classList.remove('menu-open');
 }
 
 closeMenuButton.addEventListener('click', closeMenu);
 
 links.forEach((link) => {
   link.addEventListener('click', () => {
-    mobile_menu.style.display = 'none';
+    mobileMenu.style.display = 'none';
+    body.classList.remove('menu-open');
   });
 });
