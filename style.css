@@ -38,6 +38,7 @@ header {
   z-index: 999;
   font-size: 30px;
   color: #fff;
+  cursor: pointer;
 }
 
 .menu-popup{
@@ -51,21 +52,20 @@ header {
   right: 0;
   opacity: 0.9;
   z-index: 999;
-  display: none;
+  display: flex;
   flex-direction: column;
+  display: none;
+  overflow: hidden;
 }
 
 .menu-popup .mobile_specific-links{
   display: flex;
   flex-direction: column;
-  
 }
 
 .menu-popup .mobile_specific-links .nav-link a{
-  display: flex;
-  
+  display: block;
   color: red;
-  
 }
 /* headline section */
 .headline {
