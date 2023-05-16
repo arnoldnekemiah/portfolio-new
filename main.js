@@ -1,9 +1,9 @@
-// mobile menu
+// Humbuger menu
 const mobileMenu = document.getElementById('menu-popup');
 const openMenuButton = document.getElementById('btn-menu');
 const closeMenuButton = document.querySelector('.close');
 const links = document.querySelectorAll('.nav-link a');
-const body = document.body;
+const { body } = document;
 
 function openMenu() {
   mobileMenu.style.display = 'flex';
