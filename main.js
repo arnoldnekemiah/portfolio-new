@@ -25,3 +25,15 @@ links.forEach((link) => {
     body.classList.remove('menu-open');
   });
 });
+
+function checkWindowSize() {
+  if (window.innerWidth > 768) {
+    mobileMenu.style.display = 'none';
+    body.classList.remove('menu-open');
+  } else {
+    mobileMenu.style.display = 'flex';
+  }
+}
+
+window.onload = checkWindowSize;
+window.onresize = checkWindowSize;
