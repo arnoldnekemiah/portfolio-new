@@ -22,8 +22,7 @@ Welcome to my portfolio project
 <!-- PROJECT DESCRIPTION -->
 
 # 📖 My Portfolio Project! <a name="about-project"></a>
-
-**my-portfolio!** is my second project at Microverse, in this project I follow microverse activity by following github flow, adding required files.
+Welcome to my interactive web portfolio! This project showcases my skills in front-end web development using HTML, CSS, JavaScript, and a linter for code quality assurance. Through this portfolio, I aim to demonstrate my proficiency in creating visually appealing and functional websites
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -55,19 +54,64 @@ Welcome to my portfolio project
 
 <!-- GETTING STARTED -->
 
-## 💻 Getting Started <a name="getting-started"></a>
+## :computer: Getting Started <a name="getting-started"></a>
+To get a local copy up and running, follow these steps.
 
 
-- Step 1: Clone this project using this git comand "git clone", (if you don't have git installed please visit
-https://git-scm.com/downloads and install it).
-- Step 2: Once you have installed git you can clone this project using the command below:
-  ```
-  git clone https://github.com/arnoldnekemiah/portfolio-new
-  ```
-- Step 3: Once you have cloned this repo navigate to the folder that contains 
-the repository.
-- Step 4: If you want to watch the html file open it with your favorite web browser.
-- Step 5: If you want to edit this project open it with your favorite text editor.
+### Prerequisites
+In order to run this project you need:
+- A web browser to view output e.g [Google Chrome](https://www.google.com/chrome/).
+- An IDE e.g [Visual studio code](https://code.visualstudio.com/).
+- [A terminal](https://code.visualstudio.com/docs/terminal/basics).
+
+
+### Setup
+Clone this repository to your desired folder or download the Zip folder:
+```sh
+    "git clone  https://github.com/arnoldnekemiah/portfolio-new"
+```
+- Navigate to the location of the folder in your machine:
+```sh
+    cd ./desired_folder/
+```
+
+### Install
+Install all dependencies:
+```sh
+    "npm install"
+```
+
+
+### Usage
+To run the project, follow these instructions:
+- You have to clone this repo to your local machine.
+- If you want to run it on your preferred browser, run:
+```sh
+     " Open the index.html in the project directory with your preferred browser"
+```
+
+### Run tests
+To run tests, run the following command:
+- HTML linter errors run:
+```
+npx hint .
+```
+- CSS linter errors run:
+```
+npx stylelint "**/*.{css,scss}"
+```
+- For unit testing, run:
+```
+npm test
+```
+
+### Deployment <a name="deployment"></a>
+You can deploy this project using: GitHub Pages,
+- I used GitHub Pages to deploy my website.
+- To learn about github page information about publishing sources, see "[About GitHub pages](https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#publishing-sources-for-github-pages-sites)".
+- or You can go through W3Schools, "[W3schools github pages](https://www.w3schools.com/git/git_remote_pages.asp?remote=github)".
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -88,9 +132,10 @@ the repository.
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
-
-- I will set up the mobile version.
-- I will set up the Desktop version.
+- [ ] **Make the site dynamic**
+- [ ] **Add DOM**
+- [ ] **Add CSS preprocessors**
+- [ ] **Add Bootstrap.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

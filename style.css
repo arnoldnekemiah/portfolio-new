@@ -14,6 +14,7 @@ header {
   padding: 25px;
   width: 375px;
   margin: auto;
+  position: relative;
 }
 
 #logo {
@@ -28,6 +29,69 @@ header {
 
 .mail {
   display: none;
+}
+
+.close {
+  position: relative;
+  top: 10px;
+  right: 40px;
+  z-index: 999;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10px;
+}
+
+a {
+  display: block;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: 'Inter', sans-serif;
+}
+
+.menu-popup {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background-color: #3c3a39;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.98;
+  z-index: 999;
+  flex-direction: column;
+  margin: 0 auto;
+  display: none;
+  box-shadow: 0 48px 48px rgba(37, 47, 137, 0.08);
+}
+
+body.menu-open {
+  overflow: hidden;
+}
+
+.menu-popup .mobile_specific-links {
+  display: flex;
+  flex-direction: column;
+  margin-left: 24px;
+  width: 70%;
+}
+
+.menu-popup .mobile_specific-links .nav-link a {
+  display: block;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff5e1;
+  padding-left: 40px;
+  padding-top: 40px;
+  border-bottom: 1px solid white;
 }
 
 /* headline section */
@@ -246,15 +310,6 @@ ul {
   padding: 10px 12px;
 }
 
-a {
-  display: block;
-  display: flex;
-  justify-content: center;
-  text-decoration: none;
-  font-weight: 700;
-  font-family: 'Inter', sans-serif;
-}
-
 .profesional-Art-btm {
   width: 100%;
   height: 48px;
@@ -320,10 +375,6 @@ h2 {
   background-repeat: no-repeat;
   width: 300px;
   height: 400px;
-}
-
-.image-bg:hover {
-  transform: scale(0.7);
 }
 
 .footer-img {
@@ -496,9 +547,9 @@ h2 {
     display: none;
   }
 
-  body {
+  /* body {
     overflow-x: hidden;
-  }
+  }  */
 
   #logo {
     height: 20px;
@@ -566,6 +617,7 @@ h2 {
   }
 
   .headline {
+    margin-left: 0;
     width: 100%;
     height: 550px;
     background-image: url("./Images/illustration-header2.png");
@@ -645,7 +697,7 @@ h2 {
     margin-top: -60px;
     display: flex;
     flex-direction: row;
-    margin-left: 153px;
+    margin-left: 20px;
   }
 
   .line {
@@ -657,7 +709,7 @@ h2 {
   .middle {
     display: flex;
     flex-direction: row;
-    margin-left: 185px;
+    margin-left: 80px;
     margin-top: 70px;
     gap: 24px;
   }
@@ -685,17 +737,16 @@ h2 {
 
   .work-container {
     height: 448px;
-    width: 100%;
+    width: 100vw;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    justify-items: center;
-    align-items: center;
+    justify-content: center;
   }
 
   .art-container {
     height: 435px;
     width: 369px;
-    margin-left: 142px;
+    margin-left: 10px;
     background-image: url("./Images/Img-Placeholder10.png");
   }
 
@@ -714,7 +765,7 @@ h2 {
   .art-container2 {
     height: 435px;
     width: 369px;
-    margin-right: 143px;
+    margin-left: 10px;
     background-image: url("./Images/Mask-Group.png");
   }
 
@@ -746,7 +797,7 @@ h2 {
   .image-bg {
     display: flex;
     flex-direction: row;
-    margin-right: 14%;
+    margin-right: 9.5%;
     background-image: url("./Images/illustration-about-me-d.png");
     background-size: cover;
     background-position: center bottom;
@@ -754,6 +805,7 @@ h2 {
     height: 300px;
     margin-top: 10%;
     transform: rotate(360deg);
+    transform: scale(0.9);
   }
 
   .detail {
@@ -767,13 +819,13 @@ h2 {
   .about-me {
     height: 78px;
     width: 566px;
-    margin-left: 142px;
     font-family: 'Crete Round', sans-serif;
     font-size: 72px;
     font-weight: 400;
     line-height: 82px;
     letter-spacing: 0;
     text-align: left;
+    margin-left: 0;
   }
 
   .footer-text {
@@ -785,7 +837,7 @@ h2 {
     text-align: left;
     height: 148px;
     width: 566px;
-    margin-left: 142px;
+    margin-left: 0;
   }
 
   .footer-btm {
@@ -800,7 +852,7 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 169px;
+    margin-left: 27px;
   }
 
   .my-skills {
@@ -842,7 +894,7 @@ h2 {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 1fr);
     grid-auto-flow: row;
-    margin-left: 135px;
+    margin-left: 50px;
     margin-top: 130px;
     height: 400px;
   }
@@ -883,7 +935,9 @@ h2 {
   }
 
   .line-z3 {
-    width: 10000px;
+    margin-left: 800px;
+    display: flex;
+    width: 1000px;
     margin-top: 200px;
   }
 }
