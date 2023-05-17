@@ -35,5 +35,4 @@ function checkWindowSize() {
   }
 }
 
-window.onload = checkWindowSize;
 window.onresize = checkWindowSize;
