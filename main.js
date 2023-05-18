@@ -300,3 +300,18 @@ function createPopup() {
 for (let i = 0; i < seeProject.length; i += 1) {
   seeProject[i].addEventListener('click', createPopup);
 }
+
+// form validation
+const form = document.querySelector('.form');
+const emailInput = document.querySelector('#mail');
+const errorMessage = document.querySelector('#error-message');
+
+form.addEventListener('submit', (event) => {
+  const emailValue = emailInput.value;
+  if (emailValue === emailValue.toLowerCase()) {
+    errorMessage.style.display = 'none';
+  } else {
+    event.preventDefault();
+    errorMessage.style.display = 'flex';
+  }
+});
