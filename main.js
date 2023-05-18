@@ -180,127 +180,6 @@ workContainer.appendChild(card4);
 workContainer.appendChild(card5);
 workContainer.appendChild(card6);
 
-// popup window
-const data = [
-  {
-    title: 'Multi Post Stories',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
-    technologies: ['HTML', 'Bootstrap', 'Ruby on Rails'],
-    featureImg: './images/Snapshoot-Portfolio.png',
-    liveLink: 'https://arnoldnekemiah.github.io/portfolio-new/',
-    linkSource: 'https://github.com/arnoldnekemiah/portfolio-new',
-    iconCancel: './Images/IconPop.png',
-  },
-  {
-    title: 'Multi Post Stories',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
-    technologies: ['HTML', 'Bootstrap', 'Ruby on Rails'],
-    featureImg: './Images/Snapshoot-Portfolio.png',
-    liveLink: 'https://arnoldnekemiah.github.io/portfolio-new/',
-    linkSource: 'https://github.com/arnoldnekemiah/portfolio-new',
-    iconCancel: './Images/IconPop.png',
-  },
-  {
-    title: 'Multi Post Stories',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
-    technologies: ['HTML', 'Bootstrap', 'Ruby on Rails'],
-    featureImg: './images/Snapshoot-Portfolio.png',
-    liveLink: 'https://arnoldnekemiah.github.io/portfolio-new/',
-    linkSource: 'https://github.com/arnoldnekemiah/portfolio-new',
-    iconCancel: './images/IconPop.png',
-  },
-  {
-    title: 'Multi Post Stories',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
-    technologies: ['HTML', 'Bootstrap', 'Ruby on Rails'],
-    featureImg: './Images/Snapshoot-Portfolio.png',
-    liveLink: 'https://arnoldnekemiah.github.io/portfolio-new/',
-    linkSource: 'https://github.com/arnoldnekemiah/portfolio-new',
-    iconCancel: './Images/IconPop.png',
-  },
-  {
-    title: 'Multi Post Stories',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
-    technologies: ['HTML', 'Bootstrap', 'Ruby on Rails'],
-    featureImg: './Images/Snapshoot-Portfolio.png',
-    liveLink: 'https://arnoldnekemiah.github.io/portfolio-m/',
-    linkSource: 'https://github.com/arnoldnekemiah/portfolio-new',
-    iconCancel: './Images/IconPop.png',
-  },
-  {
-    title: 'Keeping track of hundreds  of components website',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
-    technologies: ['HTML', 'Bootstrap', 'Ruby on Rails'],
-    featureImg: './Images/Snapshoot-Portfolio2.png',
-    liveLink: 'https://arnoldnekemiah.github.io/portfolio-new/',
-    linkSource: 'https://github.com/arnoldnekemiah/portfolio-new',
-    iconCancel: './Images/IconPop.png',
-  },
-  {
-    title: 'Multi Post Stories',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
-    technologies: ['HTML', 'Bootstrap', 'Ruby on Rails'],
-    featureImg: './Images/Snapshoot-Portfolio2.png',
-    liveLink: 'https://arnoldnekemiah.github.io/portfolio-new/',
-    linkSource: 'https://github.com/arnoldnekemiah/portfolio-new',
-    iconCancel: './Images/IconPop.png',
-  },
-];
-const seeProject = document.querySelectorAll('.popup');
-const section = document.createElement('div');
-section.className = 'popup-container';
-let content = '';
-data.forEach((item) => {
-  content = `
-  <div class="popup-details-container">
-       <span class="popup-name-image">
-          <h1 class="popup-name">${item.title}</h1>
-          <img src=${item.iconCancel} class="popup-image"> 
-       </span>
-    <div class="evelop">
-    <div class="conatainer1">
-      <ul class="popup-unorded-list">
-          ${item.technologies.map((itemList) => `<li class="popup-list">${itemList}</li>`).join('')}
-      </ul>
-    <span class="desktop-diff">
-          <img src=${item.featureImg} class="popup-feature-img">
-    </span>
-</div>
-
-  <div class="left-side">
-    <p class="popup-description">${item.description}</p>
-    <span class="popup-button">
-      <button class="button popup-button-1">
-        <a href=${item.liveLink}>See Project</a>
-        <img class="git" src="./Images/Iconic.png">
-      </button>
-      <button class="button popup-button-1">
-        <a href=${item.linkSource}>See Source</a>
-        <img src="./Images/Vectoric.png">
-      </button>
-    </span>
-  </div>
-    </div>
-      
-  </div> 
-  `;
-});
-
-section.innerHTML = content;
-function closePopup() {
-  document.body.removeChild(section);
-  document.body.style.overflow = 'scroll';
-}
-function createPopup() {
-  document.body.appendChild(section);
-  document.body.style.overflow = 'hidden';
-  const closeProject = document.querySelector('.popup-image');
-  closeProject.addEventListener('click', closePopup);
-}
-for (let i = 0; i < seeProject.length; i += 1) {
-  seeProject[i].addEventListener('click', createPopup);
-}
-
 // form validation
 const form = document.querySelector('.form');
 const emailInput = document.querySelector('#mail');
@@ -315,3 +194,20 @@ form.addEventListener('submit', (event) => {
     errorMessage.style.display = 'flex';
   }
 });
+
+//Save user data in local storage
+const email = document.getElementById('mail');
+const username = document.getElementById('username');
+const message = document.getElementById('message');
+
+const contactData = {
+  email,
+  username,
+  message
+};
+if (localStorage.getItem('contact-data') !== null) {
+  const data = JSON.parse(localStorage.getItem('contact-data'));
+  email.value = data.email;
+  username.value = data.username;
+  message.value = data.message;
+}
