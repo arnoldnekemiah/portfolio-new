@@ -195,7 +195,7 @@ form.addEventListener('submit', (event) => {
   }
 });
 
-//Save user data in local storage
+// Save user data in local storage and data is prefilled when existent
 const email = document.getElementById('mail');
 const username = document.getElementById('username');
 const message = document.getElementById('message');
@@ -203,7 +203,7 @@ const message = document.getElementById('message');
 const contactData = {
   email,
   username,
-  message
+  message,
 };
 if (localStorage.getItem('contact-data') !== null) {
   const data = JSON.parse(localStorage.getItem('contact-data'));
