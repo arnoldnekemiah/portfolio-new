@@ -110,3 +110,67 @@
   margin-right: 12px;
   color: #fff;
 }
+
+@media screen and (min-width: 768px) {
+  .popup-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .popup-details-container {
+    height: 631px;
+    width: 1156px;
+  }
+  .popup-name {
+    height: 40px;
+  }
+  .popup-unorded-list {
+    margin-top: -2px;
+    width: 500px;
+  }
+  .evelop {
+    display: flex;
+    gap: 20px;
+  }
+  .popup-feature-img {
+    content: url('./Images/Snapshoot-Portfolio2.png');
+    height: 448px;
+    width: 659px;
+  }
+  .left-side {
+    margin-top: 62px;
+  }
+  .popup-description {
+    height: 336px;
+    width: 424px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0;
+    text-align: left;
+    position: absolute;
+  }
+  .popup-button {
+    margin-top: 400px;
+  }
+  .popup-button-1 {
+    height: 48px;
+    width: 158px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .popup-button-1 a {
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    width: 120px;
+    height: 14px;
+    /* identical to box height, or 141% */
+    display: flex;
+    align-items: center;
+  }
+}

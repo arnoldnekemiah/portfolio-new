@@ -285,3 +285,18 @@ data.forEach((item) => {
   </div> 
   `;
 });
+
+section.innerHTML = content;
+function closePopup() {
+  document.body.removeChild(section);
+  document.body.style.overflow = 'scroll';
+}
+function createPopup() {
+  document.body.appendChild(section);
+  document.body.style.overflow = 'hidden';
+  const closeProject = document.querySelector('.popup-image');
+  closeProject.addEventListener('click', closePopup);
+}
+for (let i = 0; i < seeProject.length; i += 1) {
+  seeProject[i].addEventListener('click', createPopup);
+}
