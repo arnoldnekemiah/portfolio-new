@@ -467,6 +467,11 @@ h2 {
   margin-left: 20px;
 }
 
+#error-message {
+  color: red;
+  display: none;
+}
+
 .input-username {
   width: 327px;
   height: 48px;
