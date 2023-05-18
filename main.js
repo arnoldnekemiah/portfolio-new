@@ -203,58 +203,21 @@ data.forEach((item) => {
   </div>
     </div>
       
-  </div> 
+  </div>
   `;
-  
-// form validation
-const form = document.querySelector('.form');
-const emailInput = document.querySelector('#mail');
-const errorMessage = document.querySelector('#error-message');
-
-form.addEventListener('submit', (event) => {
-  const emailValue = emailInput.value;
-  if (emailValue === emailValue.toLowerCase()) {
-    errorMessage.style.display = 'none';
-  } else {
-    event.preventDefault();
-    errorMessage.style.display = 'flex';
-  }
 });
 
-// Save user data in local storage and data is prefilled when existent
-const email = document.getElementById('mail');
-const username = document.getElementById('username');
-const message = document.getElementById('message');
-
-const contactData = {
-  email,
-  username,
-  message,
-};
-if (localStorage.getItem('contact-data') !== null) {
-  const data = JSON.parse(localStorage.getItem('contact-data'));
-  email.value = data.email;
-  username.value = data.username;
-  message.value = data.message;
+section.innerHTML = content;
+function closePopup() {
+  document.body.removeChild(section);
+  document.body.style.overflow = 'scroll';
 }
-
-email.addEventListener('change', (e) => {
-  contactData.email = e.target.value;
-  contactData.username = username.value;
-  contactData.message = message.value;
-  localStorage.setItem('contactData', JSON.stringify(contactData));
-});
-
-username.addEventListener('change', (e) => {
-  contactData.email = email.value;
-  contactData.username = e.target.value;
-  contactData.message = message.value;
-  localStorage.setItem('contactData', JSON.stringify(contactData));
-});
-
-message.addEventListener('change', (e) => {
-  contactData.email = email.value;
-  contactData.username = username.value;
-  contactData.message = e.target.value;
-  localStorage.setItem('contactData', JSON.stringify(contactData));
-});
+function createPopup() {
+  document.body.appendChild(section);
+  document.body.style.overflow = 'hidden';
+  const closeProject = document.querySelector('.popup-image');
+  closeProject.addEventListener('click', closePopup);
+}
+for (let i = 0; i < seeProject.length; i += 1) {
+  seeProject[i].addEventListener('click', createPopup);
+}
