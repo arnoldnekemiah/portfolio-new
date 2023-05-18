@@ -37,148 +37,212 @@ function checkWindowSize() {
 
 window.onresize = checkWindowSize;
 
-// Div elements for the work section
-const card1 = document.createElement('div');
-card1.className = 'art-container project-card';
-card1.innerHTML = `
-  <div class="mycard">
-    <h3 class="profesional-Art-heading">
-      Profesional Art Printing Data
-    </h3>
-    <p class="profesional-Art-content">
-      A daily
-      selection of privately personalized reads;
-      no accounts or sign-ups required. has been the
-      industry's standard
-    </p>
-    <ul class="profesional-Art-ul">
-      <li class="profesional-Art-li">html</li>
-      <li class="profesional-Art-li">CSS</li>
-      <li class="profesional-Art-li">bootstrap</li>
-      <li class="profesional-Art-li">Ruby</li>
-    </ul>
-  </div>
-  <a href="#2" id="hide-me" class="profesional-Art-btm hide button popup">See Project</a>
-`;
+// // Div elements for the work section
+// const card1 = document.createElement('div');
+// card1.className = 'art-container project-card';
+// card1.innerHTML = `
+//   <div class="mycard">
+//     <h3 class="profesional-Art-heading">
+//       Profesional Art Printing Data
+//     </h3>
+//     <p class="profesional-Art-content">
+//       A daily
+//       selection of privately personalized reads;
+//       no accounts or sign-ups required. has been the
+//       industry's standard
+//     </p>
+//     <ul class="profesional-Art-ul">
+//       <li class="profesional-Art-li">html</li>
+//       <li class="profesional-Art-li">CSS</li>
+//       <li class="profesional-Art-li">bootstrap</li>
+//       <li class="profesional-Art-li">Ruby</li>
+//     </ul>
+//   </div>
+//   <a href="#2" id="hide-me" class="profesional-Art-btm hide button popup">See Project</a>
+// `;
 
-const card2 = document.createElement('div');
-card2.className = 'art-container1 project-card';
-card2.innerHTML = `
-  <div class="mycard">
-    <h3 class="profesional-Art-heading">
-      Profesional Art Printing Data
-    </h3>
-    <p class="profesional-Art-content">
-      A daily
-      selection of privately personalized reads;
-      no accounts or sign-ups required. has been the
-      industry's standard
-    </p>
-    <ul class="profesional-Art-ul">
-      <li class="profesional-Art-li">html</li>
-      <li class="profesional-Art-li">bootstrap</li>
-      <li class="profesional-Art-li">Ruby</li>
-    </ul>
-  </div>
-  <a href="#3" id="hide-me" class="profesional-Art-btm popup hide button hide-me">See Project</a>
-`;
+// const card2 = document.createElement('div');
+// card2.className = 'art-container1 project-card';
+// card2.innerHTML = `
+//   <div class="mycard">
+//     <h3 class="profesional-Art-heading">
+//       Profesional Art Printing Data
+//     </h3>
+//     <p class="profesional-Art-content">
+//       A daily
+//       selection of privately personalized reads;
+//       no accounts or sign-ups required. has been the
+//       industry's standard
+//     </p>
+//     <ul class="profesional-Art-ul">
+//       <li class="profesional-Art-li">html</li>
+//       <li class="profesional-Art-li">bootstrap</li>
+//       <li class="profesional-Art-li">Ruby</li>
+//     </ul>
+//   </div>
+//   <a href="#3" id="hide-me" class="profesional-Art-btm popup hide button hide-me">See Project</a>
+// `;
 
-const card3 = document.createElement('div');
-card3.className = 'art-container2 project-card';
-card3.innerHTML = `
-  <div class="mycard">
-    <h3 class="profesional-Art-heading">
-      Profesional Art Printing Data
-    </h3>
-    <p class="profesional-Art-content">
-      A daily
-      selection of privately personalized reads;
-      no accounts or sign-ups required. has been the
-      industry's standard
-    </p>
-    <ul class="profesional-Art-ul">
-      <li class="profesional-Art-li">html</li>
-      <li class="profesional-Art-li">bootstrap</li>
-      <li class="profesional-Art-li">Ruby</li>
-    </ul>
-  </div>
-  <a href="#4" id="hide-me" class="profesional-Art-btm hide button popup">See Project</a>
-`;
+// const card3 = document.createElement('div');
+// card3.className = 'art-container2 project-card';
+// card3.innerHTML = `
+//   <div class="mycard">
+//     <h3 class="profesional-Art-heading">
+//       Profesional Art Printing Data
+//     </h3>
+//     <p class="profesional-Art-content">
+//       A daily
+//       selection of privately personalized reads;
+//       no accounts or sign-ups required. has been the
+//       industry's standard
+//     </p>
+//     <ul class="profesional-Art-ul">
+//       <li class="profesional-Art-li">html</li>
+//       <li class="profesional-Art-li">bootstrap</li>
+//       <li class="profesional-Art-li">Ruby</li>
+//     </ul>
+//   </div>
+//   <a href="#4" id="hide-me" class="profesional-Art-btm hide button popup">See Project</a>
+// `;
 
-const card4 = document.createElement('div');
-card4.className = 'art-container project-card';
-card4.innerHTML = `
-  <div class="mycard">
-    <h3 class="profesional-Art-heading">
-      Profesional Art Printing Data
-    </h3>
-    <p class="profesional-Art-content">
-      A daily
-      selection of privately personalized reads;
-      no accounts or sign-ups required. has been the
-      industry's standard
-    </p>
-    <ul class="profesional-Art-ul">
-      <li class="profesional-Art-li">html</li>
-      <li class="profesional-Art-li">bootstrap</li>
-      <li class="profesional-Art-li">Ruby</li>
-    </ul>
-  </div>
-  <a href="#5" id="hide-me" class="profesional-Art-btm hide button popup">See Project</a>
-`;
+// const card4 = document.createElement('div');
+// card4.className = 'art-container project-card';
+// card4.innerHTML = `
+//   <div class="mycard">
+//     <h3 class="profesional-Art-heading">
+//       Profesional Art Printing Data
+//     </h3>
+//     <p class="profesional-Art-content">
+//       A daily
+//       selection of privately personalized reads;
+//       no accounts or sign-ups required. has been the
+//       industry's standard
+//     </p>
+//     <ul class="profesional-Art-ul">
+//       <li class="profesional-Art-li">html</li>
+//       <li class="profesional-Art-li">bootstrap</li>
+//       <li class="profesional-Art-li">Ruby</li>
+//     </ul>
+//   </div>
+//   <a href="#5" id="hide-me" class="profesional-Art-btm hide button popup">See Project</a>
+// `;
 
-const card5 = document.createElement('div');
-card5.className = 'art-container1 project-card';
-card5.innerHTML = `
-  <div class="mycard">
-    <h3 class="profesional-Art-heading">
-      Profesional Art Printing Data
-    </h3>
-    <p class="profesional-Art-content">
-      A daily
-      selection of privately personalized reads;
-      no accounts or sign-ups required. has been the
-      industry's standard
-    </p>
-    <ul class="profesional-Art-ul">
-      <li class="profesional-Art-li">html</li>
-      <li class="profesional-Art-li">bootstrap</li>
-      <li class="profesional-Art-li">Ruby</li>
-    </ul>
-  </div>
-  <a href="#6" id="hide-me" class="profesional-Art-btm hide button popup">See Project</a>
-`;
+// const card5 = document.createElement('div');
+// card5.className = 'art-container1 project-card';
+// card5.innerHTML = `
+//   <div class="mycard">
+//     <h3 class="profesional-Art-heading">
+//       Profesional Art Printing Data
+//     </h3>
+//     <p class="profesional-Art-content">
+//       A daily
+//       selection of privately personalized reads;
+//       no accounts or sign-ups required. has been the
+//       industry's standard
+//     </p>
+//     <ul class="profesional-Art-ul">
+//       <li class="profesional-Art-li">html</li>
+//       <li class="profesional-Art-li">bootstrap</li>
+//       <li class="profesional-Art-li">Ruby</li>
+//     </ul>
+//   </div>
+//   <a href="#6" id="hide-me" class="profesional-Art-btm hide button popup">See Project</a>
+// `;
 
-const card6 = document.createElement('div');
-card6.className = 'art-container2 project-card';
-card6.innerHTML = `
-  <div class="mycard">
-    <h3 class="profesional-Art-heading">
-      Profesional Art Printing Data
-    </h3>
-    <p class="profesional-Art-content">
-      A daily
-      selection of privately personalized reads;
-      no accounts or sign-ups required. has been the
-      industry's standard
-    </p>
-    <ul class="profesional-Art-ul">
-      <li class="profesional-Art-li">html</li>
-      <li class="profesional-Art-li">bootstrap</li>
-      <li class="profesional-Art-li">Ruby</li>
-    </ul>
-  </div>
-  <a href="#7" id="hide-me" class="profesional-Art-btm button popup">See Project</a>
-`;
+// const card6 = document.createElement('div');
+// card6.className = 'art-container2 project-card';
+// card6.innerHTML = `
+//   <div class="mycard">
+//     <h3 class="profesional-Art-heading">
+//       Profesional Art Printing Data
+//     </h3>
+//     <p class="profesional-Art-content">
+//       A daily
+//       selection of privately personalized reads;
+//       no accounts or sign-ups required. has been the
+//       industry's standard
+//     </p>
+//     <ul class="profesional-Art-ul">
+//       <li class="profesional-Art-li">html</li>
+//       <li class="profesional-Art-li">bootstrap</li>
+//       <li class="profesional-Art-li">Ruby</li>
+//     </ul>
+//   </div>
+//   <a href="#7" id="hide-me" class="profesional-Art-btm button popup">See Project</a>
+// `;
 
-// Append the div elements to the section with class "work-container"
+// // Append the div elements to the section with class "work-container"
+// const workContainer = document.querySelector('.work-container');
+// workContainer.appendChild(card1);
+// workContainer.appendChild(card2);
+// workContainer.appendChild(card3);
+// workContainer.appendChild(card4);
+// workContainer.appendChild(card5);
+// workContainer.appendChild(card6);
+
+// Array of project data
+const projects = [
+  {
+    heading: 'Profesional Art Printing Data',
+    content: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+    technologies: ['html', 'CSS', 'bootstrap', 'Ruby'],
+  },
+  {
+    heading: 'Profesional Art Printing Data',
+    content: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+    technologies: ['html', 'CSS', 'bootstrap', 'Ruby'],
+  },
+  {
+    heading: 'Profesional Art Printing Data',
+    content: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+    technologies: ['html', 'CSS', 'bootstrap', 'Ruby'],
+  },
+  {
+    heading: 'Profesional Art Printing Data',
+    content: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+    technologies: ['html', 'CSS', 'bootstrap', 'Ruby'],
+  },
+  {
+    heading: 'Profesional Art Printing Data',
+    content: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+    technologies: ['html', 'CSS', 'bootstrap', 'Ruby'],
+  },
+  {
+    heading: 'Profesional Art Printing Data',
+    content: 'A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry\'s standard',
+    technologies: ['html', 'CSS', 'bootstrap', 'Ruby'],
+  },
+];
+
+// Create and append the div elements for the work section dynamically
 const workContainer = document.querySelector('.work-container');
-workContainer.appendChild(card1);
-workContainer.appendChild(card2);
-workContainer.appendChild(card3);
-workContainer.appendChild(card4);
-workContainer.appendChild(card5);
-workContainer.appendChild(card6);
+projects.forEach((project, index) => {
+  const card = document.createElement('div');
+  if (index === 0) {
+    card.className = 'art-container project-card';
+  } else if (index === 1) {
+    card.className = 'art-container1 project-card';
+  } else if (index === 2) {
+    card.className = 'art-container2 project-card';
+  } else if (index === 3) {
+    card.className = 'art-container1 project-card';
+  } else if (index === 4) {
+    card.className = 'art-container2 project-card';
+  } else {
+    card.className = 'art-container project-card';
+  }
+  card.innerHTML = `
+    <div class="mycard">
+      <h3 class="profesional-Art-heading">${project.heading}</h3>
+      <p class="profesional-Art-content">${project.content}</p>
+      <ul class="profesional-Art-ul">
+        ${project.technologies.map((tech) => `<li class="profesional-Art-li">${tech}</li>`).join('')}
+      </ul>
+    </div>
+    <a href="#${index + 2}" id="hide-me" class="profesional-Art-btm hide button popup">See Project</a>
+  `;
+  workContainer.appendChild(card);
+});
 
 // popup window
 const data = [
@@ -194,7 +258,7 @@ const data = [
   {
     title: 'Multi Post Stories',
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
-    technologies: ['HTML', 'Bootstrap', 'Ruby on Rails'],
+    technologies: ['Ruby', 'Postgrel', 'Ruby on Rails'],
     featureImg: './Images/Snapshoot-Portfolio.png',
     liveLink: 'https://arnoldnekemiah.github.io/portfolio-new/',
     linkSource: 'https://github.com/arnoldnekemiah/portfolio-new',
@@ -203,7 +267,7 @@ const data = [
   {
     title: 'Multi Post Stories',
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
-    technologies: ['HTML', 'Bootstrap', 'Ruby on Rails'],
+    technologies: ['Dart', 'Fluter', 'Java'],
     featureImg: './images/Snapshoot-Portfolio.png',
     liveLink: 'https://arnoldnekemiah.github.io/portfolio-new/',
     linkSource: 'https://github.com/arnoldnekemiah/portfolio-new',
@@ -212,7 +276,7 @@ const data = [
   {
     title: 'Multi Post Stories',
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
-    technologies: ['HTML', 'Bootstrap', 'Ruby on Rails'],
+    technologies: ['Golang', 'Pearl', 'Php'],
     featureImg: './Images/Snapshoot-Portfolio.png',
     liveLink: 'https://arnoldnekemiah.github.io/portfolio-new/',
     linkSource: 'https://github.com/arnoldnekemiah/portfolio-new',
@@ -221,14 +285,14 @@ const data = [
   {
     title: 'Multi Post Stories',
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
-    technologies: ['HTML', 'Bootstrap', 'Ruby on Rails'],
+    technologies: ['Openings', 'Middlegame', 'Endgame'],
     featureImg: './Images/Snapshoot-Portfolio.png',
     liveLink: 'https://arnoldnekemiah.github.io/portfolio-m/',
     linkSource: 'https://github.com/arnoldnekemiah/portfolio-new',
     iconCancel: './Images/IconPop.png',
   },
   {
-    title: 'Keeping track of hundreds  of components website',
+    title: 'Keeping track of hundreds  of components website5',
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
     technologies: ['HTML', 'Bootstrap', 'Ruby on Rails'],
     featureImg: './Images/Snapshoot-Portfolio2.png',
@@ -271,7 +335,7 @@ data.forEach((item) => {
     <p class="popup-description">${item.description}</p>
     <span class="popup-button">
       <button class="button popup-button-1">
-        <a href=${item.liveLink}>See Project</a>
+        <a href=${item.liveLink}>See live</a>
         <img class="git" src="./Images/Iconic.png">
       </button>
       <button class="button popup-button-1">
