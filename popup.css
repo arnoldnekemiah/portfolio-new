@@ -1,0 +1,187 @@
+
+.popup-container {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(151, 148, 147, 0.9);
+  box-sizing: border-box;
+  overflow-y: scroll;
+  top: 0;
+  left: 0;
+}
+
+.popup-details-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background-color: #fff;
+  padding: 16px;
+  margin: 60px 16px 39px 16px;
+}
+
+.container1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.popup-name-image {
+  display: flex;
+  justify-content: space-between;
+}
+
+.popup-name {
+  color: #172b4d;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.popup-image {
+  height: 20px;
+  width: 20px;
+  margin-top: 10px;
+}
+
+.popup-unorded-list {
+  display: flex;
+  width: auto;
+  flex-direction: row;
+  margin-top: -40px;
+}
+
+.popup-list {
+  height: 30px;
+  width: auto;
+  padding: 1px 40px;
+  color: #3c3a39;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 26px;
+  border: 1px solid #979493;
+}
+
+.popup-feature-img {
+  height: 320px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.popup-description {
+  margin-top: -4px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  width: 100%;
+  color: #344563;
+}
+
+.popup-button {
+  margin-top: 12px;
+  display: flex;
+  gap: 98px;
+  justify-content: center;
+}
+
+.popup-button-1 {
+  display: flex;
+  align-items: center;
+  height: 48px;
+  width: auto;
+  background-color: #ff6b00 !important;
+  padding: 10px;
+}
+
+.popup-button-1:active,
+.popup-button-1:hover {
+  background-color: #ff6b02;
+}
+
+.popup-button-1 a {
+  text-decoration: none;
+  border: none;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  margin-right: 12px;
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .popup-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .popup-details-container {
+    height: 631px;
+    width: 1156px;
+  }
+
+  .popup-name {
+    height: 40px;
+  }
+
+  .popup-unorded-list {
+    margin-top: -2px;
+    width: 500px;
+  }
+
+  .evelop {
+    display: flex;
+    gap: 20px;
+  }
+
+  .popup-feature-img {
+    content: url('./Images/Snapshoot-Portfolio2.png');
+    height: 448px;
+    width: 659px;
+  }
+
+  .left-side {
+    margin-top: 62px;
+  }
+
+  .popup-description {
+    height: 336px;
+    width: 424px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0;
+    text-align: left;
+    position: absolute;
+  }
+
+  .popup-button {
+    margin-top: 400px;
+  }
+
+  .popup-button-1 {
+    height: 48px;
+    width: 158px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .popup-button-1 a {
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    width: 120px;
+    height: 14px;
+
+    /* identical to box height, or 141% */
+    display: flex;
+    align-items: center;
+  }
+}

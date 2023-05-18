@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/213f6776ae.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="popup.css">
     <title>Portfolio</title>
 </head>
 <body>
@@ -103,7 +104,7 @@
         </div>
       </section>
       <section id="work" class="work-container">
-        <div class="art-container project-card">
+        <!-- <div class="art-container project-card">
           <div class="mycard">
             <h3 class="profesional-Art-heading">
               Profesional Art Printing Data
@@ -121,7 +122,7 @@
               <li class="profesional-Art-li">Ruby</li>
             </ul>
           </div>
-          <a href="#2" id="hide-me" class="profesional-Art-btm hide button">See Project</a>
+          <a href="#2" id="hide-me" class="profesional-Art-btm hide button popup">See Project</a>
         </div>
         <div class="art-container1 project-card">
           <div class="mycard">
@@ -140,7 +141,7 @@
               <li class="profesional-Art-li">Ruby</li>
             </ul>
           </div>
-          <a href="#3" id="hide-me" class="profesional-Art-btm hide button hide-me">See Project</a>
+          <a href="#3" id="hide-me" class="profesional-Art-btm popup hide button hide-me">See Project</a>
         </div>
         <div class="art-container2 project-card">
           <div class="mycard">
@@ -159,7 +160,7 @@
               <li class="profesional-Art-li">Ruby</li>
             </ul>
           </div>
-          <a href="#4" id="hide-me" class="profesional-Art-btm hide button">See Project</a>
+          <a href="#4" id="hide-me" class="profesional-Art-btm hide button popup">See Project</a>
         </div>
         <div class="art-container project-card">
           <div class="mycard">
@@ -178,7 +179,7 @@
               <li class="profesional-Art-li">Ruby</li>
             </ul>
           </div>
-          <a href="#5" id="hide-me" class="profesional-Art-btm hide button">See Project</a>
+          <a href="#5" id="hide-me" class="profesional-Art-btm hide button popup">See Project</a>
         </div>
         <div class="art-container1 project-card">
           <div class="mycard">
@@ -197,7 +198,7 @@
               <li class="profesional-Art-li">Ruby</li>
             </ul>
           </div>
-          <a href="#6" id="hide-me" class="profesional-Art-btm hide button">See Project</a>
+          <a href="#6" id="hide-me" class="profesional-Art-btm hide button popup">See Project</a>
         </div>
         <div class="art-container2 project-card">
           <div class="mycard">
@@ -217,7 +218,7 @@
             </ul>
           </div>
          
-          <a href="#7" id="hide-me" class="profesional-Art-btm button">See Project</a>
+          <a href="#7" id="hide-me" class="profesional-Art-btm button popup">See Project</a> -->
         </div>
       </section>
       <section id="About-me" class="about">
@@ -275,6 +276,7 @@
       <div class="input-email">
         <input id="mail" class="input-1" type="email" placeholder="Email address" name="input-email" required>
         <hr class="line-z">
+        <span id="error-message">Please ensure email address is in lower</span>
       </div>
         <textarea id="message" class="textarea" maxlength="500" placeholder="Enter your text here" name="textarea" required></textarea>
         <button id="submit" class="btn-submit" type="submit">Get in touch</button>
