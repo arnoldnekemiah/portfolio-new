@@ -211,3 +211,24 @@ if (localStorage.getItem('contact-data') !== null) {
   username.value = data.username;
   message.value = data.message;
 }
+
+email.addEventListener('change', (e) => {
+  contactData.email = e.target.value;
+  contactData.username = username.value;
+  contactData.message = message.value;
+  localStorage.setItem('contactData', JSON.stringify(contactData));
+});
+
+username.addEventListener('change', (e) => {
+  contactData.email = email.value;
+  contactData.username = e.target.value;
+  contactData.message = message.value;
+  localStorage.setItem('contactData', JSON.stringify(contactData));
+});
+
+message.addEventListener('change', (e) => {
+  contactData.email = email.value;
+  contactData.username = username.value;
+  contactData.message = e.target.value;
+  localStorage.setItem('contactData', JSON.stringify(contactData));
+});
