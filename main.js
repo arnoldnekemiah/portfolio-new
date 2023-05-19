@@ -37,198 +37,140 @@ function checkWindowSize() {
 
 window.onresize = checkWindowSize;
 
-// Div elements for the work section
-const card1 = document.createElement('div');
-card1.className = 'art-container project-card';
-card1.innerHTML = `
-  <div class="mycard">
-    <h3 class="profesional-Art-heading">
-      Profesional Art Printing Data
-    </h3>
-    <p class="profesional-Art-content">
-      A daily
-      selection of privately personalized reads;
-      no accounts or sign-ups required. has been the
-      industry's standard
-    </p>
-    <ul class="profesional-Art-ul">
-      <li class="profesional-Art-li">html</li>
-      <li class="profesional-Art-li">CSS</li>
-      <li class="profesional-Art-li">bootstrap</li>
-      <li class="profesional-Art-li">Ruby</li>
-    </ul>
-  </div>
-  <a href="#2" id="hide-me" class="profesional-Art-btm hide button popup">See Project</a>
-`;
+const data = [
+  {
+    title: 'Multi Post Stories',
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+    technologies: ['HTML', 'Bootstrap', 'Nodejs'],
+    featureImg: './images/Snapshoot-Portfolio.png',
+    liveLink: 'https://arnoldnekemiah.github.io/portfolio-new/',
+    linkSource: 'https://github.com/arnoldnekemiah/portfolio-new',
+    iconCancel: './Images/IconPop.png',
+  },
+  {
+    title: 'Multi Post Stories',
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+    technologies: ['Ruby', 'Postgrel', 'Node.js'],
+    featureImg: './Images/Snapshoot-Portfolio.png',
+    liveLink: 'https://arnoldnekemiah.github.io/portfolio-new/',
+    linkSource: 'https://github.com/arnoldnekemiah/portfolio-new',
+    iconCancel: './Images/IconPop.png',
+  },
+  {
+    title: 'Multi Post Stories',
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+    technologies: ['Dart', 'Fluter', 'Java'],
+    featureImg: './images/Snapshoot-Portfolio2.png',
+    liveLink: 'https://arnoldnekemiah.github.io/portfolio-new/',
+    linkSource: 'https://github.com/arnoldnekemiah/portfolio-new',
+    iconCancel: './images/IconPop.png',
+  },
+  {
+    title: 'Multi Post Stories',
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+    technologies: ['Golang', 'Pearl', 'Php'],
+    featureImg: './Images/Snapshoot-Portfolio.png',
+    liveLink: 'https://arnoldnekemiah.github.io/portfolio-new/',
+    linkSource: 'https://github.com/arnoldnekemiah/portfolio-new',
+    iconCancel: './Images/IconPop.png',
+  },
+  {
+    title: 'Multi Post Stories',
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+    technologies: ['Openings', 'Middlegame', 'Endgame'],
+    featureImg: './Images/Snapshoot-Portfolio.png',
+    liveLink: 'https://arnoldnekemiah.github.io/portfolio-m/',
+    linkSource: 'https://github.com/arnoldnekemiah/portfolio-new',
+    iconCancel: './Images/IconPop.png',
+  },
+  {
+    title: 'Keeping track of hundreds  of components website5',
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+    technologies: ['HTML', 'Bootstrap', 'Ruby on Rails'],
+    featureImg: './Images/Snapshoot-Portfolio2.png',
+    liveLink: 'https://arnoldnekemiah.github.io/portfolio-new/',
+    linkSource: 'https://github.com/arnoldnekemiah/portfolio-new',
+    iconCancel: './Images/IconPop.png',
+  },
+  {
+    title: 'Multi Post Stories',
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+    technologies: ['HTML', 'Bootstrap', 'Typescript'],
+    featureImg: './Images/Snapshoot-Portfolio2.png',
+    liveLink: 'https://arnoldnekemiah.github.io/portfolio-new/',
+    linkSource: 'https://github.com/arnoldnekemiah/portfolio-new',
+    iconCancel: './Images/IconPop.png',
+  },
+];
 
-const card2 = document.createElement('div');
-card2.className = 'art-container1 project-card';
-card2.innerHTML = `
-  <div class="mycard">
-    <h3 class="profesional-Art-heading">
-      Profesional Art Printing Data
-    </h3>
-    <p class="profesional-Art-content">
-      A daily
-      selection of privately personalized reads;
-      no accounts or sign-ups required. has been the
-      industry's standard
-    </p>
-    <ul class="profesional-Art-ul">
-      <li class="profesional-Art-li">html</li>
-      <li class="profesional-Art-li">bootstrap</li>
-      <li class="profesional-Art-li">Ruby</li>
-    </ul>
-  </div>
-  <a href="#3" id="hide-me" class="profesional-Art-btm popup hide button hide-me">See Project</a>
-`;
-
-const card3 = document.createElement('div');
-card3.className = 'art-container2 project-card';
-card3.innerHTML = `
-  <div class="mycard">
-    <h3 class="profesional-Art-heading">
-      Profesional Art Printing Data
-    </h3>
-    <p class="profesional-Art-content">
-      A daily
-      selection of privately personalized reads;
-      no accounts or sign-ups required. has been the
-      industry's standard
-    </p>
-    <ul class="profesional-Art-ul">
-      <li class="profesional-Art-li">html</li>
-      <li class="profesional-Art-li">bootstrap</li>
-      <li class="profesional-Art-li">Ruby</li>
-    </ul>
-  </div>
-  <a href="#4" id="hide-me" class="profesional-Art-btm hide button popup">See Project</a>
-`;
-
-const card4 = document.createElement('div');
-card4.className = 'art-container project-card';
-card4.innerHTML = `
-  <div class="mycard">
-    <h3 class="profesional-Art-heading">
-      Profesional Art Printing Data
-    </h3>
-    <p class="profesional-Art-content">
-      A daily
-      selection of privately personalized reads;
-      no accounts or sign-ups required. has been the
-      industry's standard
-    </p>
-    <ul class="profesional-Art-ul">
-      <li class="profesional-Art-li">html</li>
-      <li class="profesional-Art-li">bootstrap</li>
-      <li class="profesional-Art-li">Ruby</li>
-    </ul>
-  </div>
-  <a href="#5" id="hide-me" class="profesional-Art-btm hide button popup">See Project</a>
-`;
-
-const card5 = document.createElement('div');
-card5.className = 'art-container1 project-card';
-card5.innerHTML = `
-  <div class="mycard">
-    <h3 class="profesional-Art-heading">
-      Profesional Art Printing Data
-    </h3>
-    <p class="profesional-Art-content">
-      A daily
-      selection of privately personalized reads;
-      no accounts or sign-ups required. has been the
-      industry's standard
-    </p>
-    <ul class="profesional-Art-ul">
-      <li class="profesional-Art-li">html</li>
-      <li class="profesional-Art-li">bootstrap</li>
-      <li class="profesional-Art-li">Ruby</li>
-    </ul>
-  </div>
-  <a href="#6" id="hide-me" class="profesional-Art-btm hide button popup">See Project</a>
-`;
-
-const card6 = document.createElement('div');
-card6.className = 'art-container2 project-card';
-card6.innerHTML = `
-  <div class="mycard">
-    <h3 class="profesional-Art-heading">
-      Profesional Art Printing Data
-    </h3>
-    <p class="profesional-Art-content">
-      A daily
-      selection of privately personalized reads;
-      no accounts or sign-ups required. has been the
-      industry's standard
-    </p>
-    <ul class="profesional-Art-ul">
-      <li class="profesional-Art-li">html</li>
-      <li class="profesional-Art-li">bootstrap</li>
-      <li class="profesional-Art-li">Ruby</li>
-    </ul>
-  </div>
-  <a href="#7" id="hide-me" class="profesional-Art-btm button popup">See Project</a>
-`;
-
-// Append the div elements to the section with class "work-container"
 const workContainer = document.querySelector('.work-container');
-workContainer.appendChild(card1);
-workContainer.appendChild(card2);
-workContainer.appendChild(card3);
-workContainer.appendChild(card4);
-workContainer.appendChild(card5);
-workContainer.appendChild(card6);
+data.forEach((project, index) => {
+  const card = document.createElement('div');
+  card.className = `art-container art-container${index + 1} project-card`;
 
-// form validation
-const form = document.querySelector('.form');
-const emailInput = document.querySelector('#mail');
-const errorMessage = document.querySelector('#error-message');
-
-form.addEventListener('submit', (event) => {
-  const emailValue = emailInput.value;
-  if (emailValue === emailValue.toLowerCase()) {
-    errorMessage.style.display = 'none';
-  } else {
-    event.preventDefault();
-    errorMessage.style.display = 'flex';
-  }
+  card.innerHTML = `
+    <div class="mycard">
+      <h3 class="profesional-Art-heading">${project.title}</h3>
+      <p class="profesional-Art-content">${project.content}</p>
+      <ul class="profesional-Art-ul">
+        ${project.technologies.map((tech) => `<li class="profesional-Art-li">${tech}</li>`).join('')}
+      </ul>
+    </div>
+    <a href="#${index + 2}" id="hide-me" class="profesional-Art-btm hide button popup">See Project</a>
+  `;
+  workContainer.appendChild(card);
 });
 
-// Save user data in local storage and data is prefilled when existent
-const email = document.getElementById('mail');
-const username = document.getElementById('username');
-const message = document.getElementById('message');
+const seeProject = document.querySelectorAll('.popup');
 
-const contactData = {
-  email,
-  username,
-  message,
-};
-if (localStorage.getItem('contact-data') !== null) {
-  const data = JSON.parse(localStorage.getItem('contact-data'));
-  email.value = data.email;
-  username.value = data.username;
-  message.value = data.message;
+function createPopup(project) {
+  const section = document.createElement('div');
+  section.className = 'popup-container';
+
+  section.innerHTML = `
+    <div class="popup-details-container">
+      <span class="popup-name-image">
+        <h1 class="popup-name">${project.title}</h1>
+        <img src=${project.iconCancel} class="popup-image">
+      </span>
+      <div class="evelop">
+        <div class="conatainer1">
+          <ul class="popup-unorded-list">
+            ${project.technologies.map((itemList) => `<li class="popup-list">${itemList}</li>`).join('')}
+          </ul>
+          <span class="desktop-diff">
+            <img src=${project.featureImg} class="popup-feature-img">
+          </span>
+        </div>
+        <div class="left-side">
+          <p class="popup-description">${project.description}</p>
+          <span class="popup-button">
+            <button class="button popup-button-1">
+              <a href=${project.liveLink}>See live</a>
+              <img class="git" src="./Images/Iconic.png">
+            </button>
+            <button class="button popup-button-1">
+              <a href=${project.linkSource}>See Source</a>
+              <img src="./Images/Vectoric.png">
+            </button>
+          </span>
+        </div>
+      </div>
+    </div>
+  `;
+
+  document.body.appendChild(section);
+  document.body.style.overflow = 'hidden';
+
+  const closeProject = section.querySelector('.popup-image');
+  closeProject.addEventListener('click', () => {
+    document.body.removeChild(section);
+    document.body.style.overflow = 'scroll';
+  });
 }
 
-email.addEventListener('change', (e) => {
-  contactData.email = e.target.value;
-  contactData.username = username.value;
-  contactData.message = message.value;
-  localStorage.setItem('contactData', JSON.stringify(contactData));
-});
-
-username.addEventListener('change', (e) => {
-  contactData.email = email.value;
-  contactData.username = e.target.value;
-  contactData.message = message.value;
-  localStorage.setItem('contactData', JSON.stringify(contactData));
-});
-
-message.addEventListener('change', (e) => {
-  contactData.email = email.value;
-  contactData.username = username.value;
-  contactData.message = e.target.value;
-  localStorage.setItem('contactData', JSON.stringify(contactData));
+seeProject.forEach((button, index) => {
+  button.addEventListener('click', () => {
+    createPopup(data[index]);
+  });
 });

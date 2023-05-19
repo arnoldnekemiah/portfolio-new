@@ -52,7 +52,6 @@
 
 .popup-list {
   height: 30px;
-  width: auto;
   padding: 1px 40px;
   color: #3c3a39;
   font-family: 'Poppins', sans-serif;
@@ -160,7 +159,7 @@
   }
 
   .popup-button {
-    margin-top: 400px;
+    margin-top: 350px;
   }
 
   .popup-button-1 {
