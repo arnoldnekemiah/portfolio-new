@@ -174,3 +174,57 @@ seeProject.forEach((button, index) => {
     createPopup(data[index]);
   });
 });
+
+// form validation
+const form = document.querySelector('.form');
+const emailInput = document.querySelector('#mail');
+const errorMessage = document.querySelector('#error-message');
+
+form.addEventListener('submit', (event) => {
+  const emailValue = emailInput.value;
+  if (emailValue === emailValue.toLowerCase()) {
+    errorMessage.style.display = 'none';
+  } else {
+    event.preventDefault();
+    errorMessage.style.display = 'flex';
+  }
+});
+
+// Save user data
+// using localstroage
+const email = document.getElementById('mail');
+const username = document.getElementById('username');
+const message = document.getElementById('message');
+
+const contactData = {
+  email,
+  username,
+  message,
+};
+if (localStorage.getItem('contact-data') !== null) {
+  const data = JSON.parse(localStorage.getItem('contact-data'));
+  email.value = data.email;
+  username.value = data.username;
+  message.value = data.message;
+}
+
+email.addEventListener('change', (e) => {
+  contactData.email = e.target.value;
+  contactData.username = username.value;
+  contactData.message = message.value;
+  localStorage.setItem('contact-data', JSON.stringify(contactData));
+});
+
+username.addEventListener('change', (e) => {
+  contactData.username = e.target.value;
+  contactData.message = message.value;
+  contactData.email = email.value;
+  localStorage.setItem('contact-data', JSON.stringify(contactData));
+});
+
+message.addEventListener('change', (e) => {
+  contactData.message = e.target.value;
+  contactData.email = email.value;
+  contactData.username = username.value;
+  localStorage.setItem('contact-data', JSON.stringify(contactData));
+});
