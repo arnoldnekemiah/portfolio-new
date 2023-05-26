@@ -7,7 +7,7 @@ const { body } = document;
 
 function openMenu() {
   mobileMenu.style.display = 'flex';
-  body.classList.add('menu-open');
+  body.classList('menu-open');
 }
 
 openMenuButton.addEventListener('click', openMenu);
