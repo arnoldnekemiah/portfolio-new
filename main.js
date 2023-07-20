@@ -84,12 +84,12 @@ const data = [
     iconCancel: './Images/IconPop.png',
   },
   {
-    title: 'Keeping track of hundreds  of components website5',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
-    technologies: ['HTML', 'Bootstrap', 'Ruby on Rails'],
-    featureImg: './Images/Snapshoot-Portfolio2.png',
-    liveLink: 'https://arnoldnekemiah.github.io/portfolio-new/',
-    linkSource: 'https://github.com/arnoldnekemiah/portfolio-new',
+    title: 'Developer School',
+    description: "We Present to You the ultimate Coding School.A web/mobile app development bootcamp teaches programming, design, and deployment skills. It's an intensive, hands-on course led by professionals, preparing participants for a career in tech. ",
+    technologies: ['HTML', 'CSS', 'Javascript'],
+    featureImg: './images/devSchool.png',
+    liveLink: 'https://arnoldnekemiah.github.io/Developer-school/',
+    linkSource: 'https://github.com/arnoldnekemiah/Developer-school',
     iconCancel: './Images/IconPop.png',
   },
   {
