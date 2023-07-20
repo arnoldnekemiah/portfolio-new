@@ -84,12 +84,12 @@ const data = [
     iconCancel: './Images/IconPop.png',
   },
   {
-    title: 'Developer School',
-    description: "We Present to You the ultimate Coding School.A web/mobile app development bootcamp teaches programming, design, and deployment skills. It's an intensive, hands-on course led by professionals, preparing participants for a career in tech. ",
-    technologies: ['HTML', 'CSS', 'Javascript'],
-    featureImg: './images/devSchool.png',
-    liveLink: 'https://arnoldnekemiah.github.io/Developer-school/',
-    linkSource: 'https://github.com/arnoldnekemiah/Developer-school',
+    title: 'Multi Post Stories',
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+    technologies: ['HTML', 'Bootstrap', 'Typescript'],
+    featureImg: './Images/Snapshoot-Portfolio2.png',
+    liveLink: 'https://arnoldnekemiah.github.io/portfolio-new/',
+    linkSource: 'https://github.com/arnoldnekemiah/portfolio-new',
     iconCancel: './Images/IconPop.png',
   },
   {
@@ -111,7 +111,8 @@ data.forEach((project, index) => {
   card.innerHTML = `
     <div class="mycard">
       <h3 class="profesional-Art-heading">${project.title}</h3>
-      <p class="profesional-Art-content">${project.content}</p>
+      <!-- The property should be 'description', not 'content' -->
+      <p class="profesional-Art-content">${project.description}</p>
       <ul class="profesional-Art-ul">
         ${project.technologies.map((tech) => `<li class="profesional-Art-li">${tech}</li>`).join('')}
       </ul>
