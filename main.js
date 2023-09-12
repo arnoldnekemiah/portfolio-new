@@ -26,17 +26,6 @@ links.forEach((link) => {
   });
 });
 
-function checkWindowSize() {
-  if (window.innerWidth > 768) {
-    mobileMenu.style.display = 'none';
-    body.classList.remove('menu-open');
-  } else {
-    mobileMenu.style.display = 'flex';
-  }
-}
-
-window.onresize = checkWindowSize;
-
 const data = [
   {
     title: 'Developer School',
