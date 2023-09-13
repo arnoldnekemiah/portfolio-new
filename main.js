@@ -26,18 +26,34 @@ links.forEach((link) => {
   });
 });
 
-function checkWindowSize() {
-  if (window.innerWidth > 768) {
-    mobileMenu.style.display = 'none';
-    body.classList.remove('menu-open');
-  } else {
-    mobileMenu.style.display = 'flex';
-  }
-}
-
-window.onresize = checkWindowSize;
-
 const data = [
+  {
+    title: 'Crypto Market',
+    description: 'Crypto Market is an app that lets you keep track of the top 100 cryptocurrencies ranked by their marketcaps.',
+    technologies: ['React', 'JavaScript', 'Redux', 'API'],
+    featureImg: './Images/crypto.png',
+    liveLink: 'https://hilarious-narwhal-a7e78b.netlify.app/',
+    linkSource: 'https://github.com/arnoldnekemiah/crypto-market',
+    iconCancel: './Images/IconPop.png',
+  },
+  {
+    title: 'Metflix',
+    description: 'This is a single-page app that lists movies by categories. Users can like their favorite movies, open details about each movie and leave comments. Built with JavaScript.',
+    technologies: ['JavaScript', 'ES6'],
+    featureImg: './Images/metlix.png',
+    liveLink: 'https://arnoldnekemiah.github.io/Metflix/',
+    linkSource: 'https://github.com/arnoldnekemiah/Metflix',
+    iconCancel: './Images/IconPop.png',
+  },
+  {
+    title: 'Space Travellers Hub',
+    description: 'This website contain three webpages with rockets, mission, and my profile. In the rocket page we will fetch data from Space X real data from API and the missions. Visitors can select their rockets and the missions from the current website.',
+    technologies: ['React', 'JavaScript', 'Redux'],
+    featureImg: './images/space.png',
+    liveLink: 'https://space-x-travelers-hub.onrender.com/',
+    linkSource: 'https://github.com/Mahdi-Niazi/space-travelers-hub',
+    iconCancel: './images/IconPop.png',
+  },
   {
     title: 'Developer School',
     description: "We Present to You the ultimate Coding School.A web/mobile app development bootcamp teaches programming, design, and deployment skills. It's an intensive, hands-on course led by professionals, preparing participants for a career in tech. ",
@@ -49,34 +65,7 @@ const data = [
   },
   {
     title: 'Multi Post Stories',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
-    technologies: ['Ruby', 'Postgrel', 'Node.js'],
-    featureImg: './Images/Snapshoot-Portfolio.png',
-    liveLink: 'https://arnoldnekemiah.github.io/portfolio-new/',
-    linkSource: 'https://github.com/arnoldnekemiah/portfolio-new',
-    iconCancel: './Images/IconPop.png',
-  },
-  {
-    title: 'Multi Post Stories',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
-    technologies: ['Dart', 'Fluter', 'Java'],
-    featureImg: './images/Snapshoot-Portfolio2.png',
-    liveLink: 'https://arnoldnekemiah.github.io/portfolio-new/',
-    linkSource: 'https://github.com/arnoldnekemiah/portfolio-new',
-    iconCancel: './images/IconPop.png',
-  },
-  {
-    title: 'Multi Post Stories',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
-    technologies: ['Golang', 'Pearl', 'Php'],
-    featureImg: './Images/Snapshoot-Portfolio.png',
-    liveLink: 'https://arnoldnekemiah.github.io/portfolio-new/',
-    linkSource: 'https://github.com/arnoldnekemiah/portfolio-new',
-    iconCancel: './Images/IconPop.png',
-  },
-  {
-    title: 'Multi Post Stories',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+    description: 'Coming Soon',
     technologies: ['Openings', 'Middlegame', 'Endgame'],
     featureImg: './Images/Snapshoot-Portfolio.png',
     liveLink: 'https://arnoldnekemiah.github.io/portfolio-m/',
@@ -85,7 +74,7 @@ const data = [
   },
   {
     title: 'Multi Post Stories',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releax map lapora verita.",
+    description: 'Coming Soon',
     technologies: ['HTML', 'Bootstrap', 'Typescript'],
     featureImg: './Images/Snapshoot-Portfolio2.png',
     liveLink: 'https://arnoldnekemiah.github.io/portfolio-new/',
@@ -109,16 +98,16 @@ data.forEach((project, index) => {
   card.className = `art-container art-container${index + 1} project-card`;
 
   card.innerHTML = `
-    <div class="mycard">
-      <h3 class="profesional-Art-heading">${project.title}</h3>
-      <!-- The property should be 'description', not 'content' -->
-      <p class="profesional-Art-content">${project.description}</p>
-      <ul class="profesional-Art-ul">
-        ${project.technologies.map((tech) => `<li class="profesional-Art-li">${tech}</li>`).join('')}
-      </ul>
-    </div>
-    <a href="#${index + 2}" id="hide-me" class="profesional-Art-btm hide button popup">See Project</a>
-  `;
+  <div class="mycard">
+    <h3 class="profesional-Art-heading">${project.title}</h3>
+    <!-- Remove the description from here -->
+    <ul class="profesional-Art-ul">
+      ${project.technologies.map((tech) => `<li class="profesional-Art-li">${tech}</li>`).join('')}
+    </ul>
+  </div>
+  <a href="${index + 2}" id="hide-me" class="profesional-Art-btm hide button popup">See Project</a>
+`;
+
   workContainer.appendChild(card);
 });
 
@@ -144,6 +133,7 @@ function createPopup(project) {
           </span>
         </div>
         <div class="left-side">
+          <!-- Include the description here -->
           <p class="popup-description">${project.description}</p>
           <span class="popup-button">
             <button class="button popup-button-1">

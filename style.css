@@ -251,8 +251,8 @@ ul {
 .art-container,
 .art-container1,
 .art-container2 {
-  background-image: url('./Images/Img-Placeholder10.png');
   margin-bottom: 20px;
+  box-shadow: 3px 3px red, -1em 0 0.4em rgb(0, 0, 128);
 }
 
 .art-container > #hide-me,
@@ -275,7 +275,7 @@ ul {
   width: 295px;
   height: 81px;
   line-height: 44px;
-  color: #fff;
+  color: #1c1a19;
   padding: 80px 0 0 10px;
 }
 
@@ -299,27 +299,30 @@ ul {
 }
 
 .profesional-Art-li {
+  display: flex;
+  flex-direction: column;
   font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
   color: #fff;
   background: rgba(255, 255, 255, 0.24);
-  margin-top: 50px;
   gap: 20px;
   padding: 10px 12px;
 }
 
 .profesional-Art-btm {
-  width: 100%;
+  width: 30%;
   height: 48px;
   background: #ff6b00;
+  border-radius: 50%;
   font-size: 17px;
   color: #fff;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-top: 38px;
   border-style: none;
+  box-shadow: 3px 3px red, -1em 0 0.4em rgb(21, 0, 128);
+  margin: auto;
 }
 
 a.profesional-Art-btm {
@@ -552,10 +555,6 @@ h2 {
     display: none;
   }
 
-  /* body {
-    overflow-x: hidden;
-  }  */
-
   #logo {
     height: 20px;
     width: 250px;
@@ -764,14 +763,22 @@ h2 {
     height: 435px;
     width: 369px;
     margin-left: 10px;
-    background-image: url("./Images/Img-Placeholder11.png");
+    background-image: url("./Images/crypto.png");
   }
 
   .art-container2 {
     height: 435px;
     width: 369px;
     margin-left: 10px;
-    background-image: url("./Images/Mask-Group.png");
+    background-image: url("./Images/metlix.png");
+  }
+
+  .art-container3 {
+    background-image: url("./Images/space.png");
+  }
+
+  .art-container4 {
+    background-image: url("./Images/devSchool.png");
   }
 
   .project-card:hover .mycard {
